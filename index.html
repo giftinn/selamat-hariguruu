@@ -63,12 +63,16 @@
       align-items: center;
       max-width: 850px;
       padding: 30px;
+      width: 100%;
+      box-sizing: border-box;
+      position: relative; 
     }
     
     .decoration-top {
-      margin-bottom: 20px;
-      width: 300px;
-      opacity: 0.8;
+    margin-bottom: 20px;
+    max-width: 100%;
+    width: 300px;
+    opacity: 0.8;
     }
     
     .letter-container {
@@ -174,6 +178,7 @@
       right: 20px;
       opacity: 0.7;
       transform: rotate(15deg);
+      pointer-events: none;
     }
     
     .decoration-divider {
@@ -205,8 +210,15 @@
       }
       
       .decoration-top {
-        width: 200px;
+        width: 80%;
       }
+
+      .red-rose {
+      max-width: 50px;
+      bottom: 10px;
+      right: 10px;
+    }
+      
     }
   </style>
 </head>
@@ -251,6 +263,7 @@
 </body>
 
 </html>
+
 
 
 
