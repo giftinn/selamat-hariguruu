@@ -21,8 +21,15 @@
       margin: 0;
       padding: 0;
     }
+
+  html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  }
     
-body {
+  body {
   font-family: 'Cormorant Garamond', serif;
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -71,7 +78,8 @@ body {
       box-shadow: 0 10px 30px var(--shadow-color);
       border-radius: 8px;
       position: relative;
-      margin-bottom: 30px;
+      max-height: 80vh;
+      overflow-y: auto;
     }
     
     .letter-container::before {
@@ -243,6 +251,7 @@ body {
 </body>
 
 </html>
+
 
 
 
