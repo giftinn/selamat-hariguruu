@@ -15,6 +15,13 @@
       --text-color: #4a3636;
       --shadow-color: rgba(0,0,0,0.1);
     }
+
+    :root {
+    --text-strong: rgba(0,0,0,0.9);
+    --text-medium: rgba(0,0,0,0.75);
+    --text-light: rgba(0,0,0,0.55);
+  }
+
     
     * {
       box-sizing: border-box;
@@ -69,7 +76,7 @@
     }
     
     .decoration-top {
-     margin-top: 15px;
+     margin-top: 25px;
     max-width: 100%;
     width: 300px;
     opacity: 0.8;
@@ -78,13 +85,16 @@
     .letter-container {
       max-width: 650px;
       padding: 50px;
-      background-color: #fff;
+      background: rgba(255,255,255,0.35);  
       box-shadow: 0 10px 30px var(--shadow-color);
-      border-radius: 8px;
-      position: relative;
+      border-radius: 12px;
+      height: auto;
       max-height: 80vh;
       overflow-y: auto;
+      backdrop-filter: blur(8px);          
+      -webkit-backdrop-filter: blur(8px);  
     }
+
     
     .letter-container::before {
       content: '';
@@ -121,13 +131,15 @@
       text-align: right;
       margin-bottom: 30px;
       font-style: italic;
-      color: #888;
+      font-weight: bolder;
+      color: var(--text-strong);
     }
     
     .greeting {
       font-weight: 600;
       margin-bottom: 25px;
       font-size: 22px;
+      color: var(--text-strong);
     }
     
     .body-text {
@@ -136,10 +148,11 @@
       font-size: 18px;
     }
     
-    .body-text p {
-      margin-bottom: 20px;
-      position: relative;
-      z-index: 1;
+    .body-text {
+      margin-bottom: 30px;
+      text-align: justify;
+      font-size: 18px;
+      color: var(--text-strong);
     }
     
     .body-text p:first-letter {
@@ -197,7 +210,6 @@
       .letter-container {
         padding: 30px;
         margin: 20px;
-        height: 650px;
       }
       
       h1 {
@@ -210,7 +222,14 @@
       
       .decoration-top {
         width: 45%;
-      }  
+      }
+
+      .red-rose {
+      max-width: 80px;
+      bottom: 50px;
+      right: -55%;
+    }
+      
     }
   </style>
 </head>
@@ -254,8 +273,6 @@
 </body>
 
 </html>
-
-
 
 
 
